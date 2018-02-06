@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body , #PageWrap{
+	background-color: #BBBBBB;
+	width: 100%;
+	font-family: Roboto;
+}
+
+nav {
+	background-color: #000000;
+	padding: 20px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+nav ul div {
+	text-align: right;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1.7em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*Styles for logo in the navbar*/
+
+.logo {
+	border: 2px solid #555555;
+	padding: 5px;
+}
+
+.FANTASY {
+	color: #F4F122;
+	font-family: "Black Ops One";
+	position: relative;
+	right: 25px;
+}
+
+.IH8 {
+	font-size: .5em;
+	position: relative;
+	bottom: 25px;
+	left: 130px;
+	background-color: #000000;
+	padding: 1px 3px;
+}
+
+/*Styles for the rest of navbar links*/
+#navmenu li a{
+	padding: 20px 10px;
+}
+
+#navmenu li a:hover {
+	background-color: #555555;
+}
