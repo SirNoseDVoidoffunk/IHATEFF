@@ -1,18 +1,23 @@
+@import "media/Nike_Combat_Stencil/stylesheet.css";
+
 * {
 	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
+
 }
 
 html, body , #PageWrap{
 	background-color: #BBBBBB;
 	width: 100%;
 	font-family: Roboto;
+	background-image: url("media/draftboard_background.png");
 }
 
 nav {
 	background-color: #000000;
 	padding: 20px;
+	width: 100%;
 }
 
 nav ul li {
@@ -41,9 +46,25 @@ nav ul li a {
 /*Styles for logo in the navbar*/
 
 .logo {
-	position: relative;
-	bottom: 25px;
-}
+ 	border: 2px solid #555555;
+ 	padding: 5px;
+ }
+
+.FANTASY {
+	color: #F4F122;
+ 	font-family: "Nike Combat Stencil", "Black Ops One";
+ 	position: relative;
+ 	right: 25px;
+ }
+ 
+ .IH8 {
+ 	font-size: .5em;
+ 	position: relative;
+ 	bottom: 25px;
+ 	left: 130px;
+ 	background-color: #000000;
+ 	padding: 1px 6px;
+ }
 
 /*Styles for the rest of navbar links*/
 #navmenu li a{
@@ -54,11 +75,16 @@ nav ul li a {
 	background-color: #555555;
 }
 
+.menuButton {
+	display: none;
+}
+
 
 /*Styles for header section*/
 header {
-	background-image: url("media/draftboard_background.png");
 	text-align: center;
-	color: #FFFFFF;
-	padding: 20px;
+	font-family: 'Aldrich', sans-serif;
+	color: #F4F122;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	padding: 30px;
 }
