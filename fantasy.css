@@ -33,6 +33,7 @@ nav ul li a {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 1.7em;
+	font-family: 'Aldrich', sans-serif;
 }
 
 .left {
@@ -69,6 +70,7 @@ nav ul li a {
 /*Styles for the rest of navbar links*/
 #navmenu li a{
 	padding: 20px 10px;
+	color: #F4F122;
 }
 
 #navmenu li a:hover {
@@ -84,7 +86,35 @@ nav ul li a {
 header {
 	text-align: center;
 	font-family: 'Aldrich', sans-serif;
-	color: #F4F122;
+	color: #FFFFFF;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	padding: 30px;
+}
+
+.headerDescription {
+	background-color: rgba(85,85,85,.8);
+	border-radius: 20px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+
+}
+
+/*Styles for preview section*/
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	padding: 30px;
+	background-color: #555555;
+	width: 100%;
+}
+
+.preview div {
+	width: 400px;  /* Or whatever */
+  	height: 100px; /* Or whatever */
+  	margin: 30px auto;  /* Magic! */
+  	background-color: #000000;
 }
