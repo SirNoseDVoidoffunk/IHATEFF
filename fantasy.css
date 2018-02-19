@@ -62,7 +62,7 @@ nav ul li a {
  	font-size: .5em;
  	position: relative;
  	bottom: 25px;
- 	left: 130px;
+ 	left: 135px;
  	background-color: #000000;
  	padding: 1px 6px;
  }
@@ -107,14 +107,24 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-around;
-	padding: 30px;
 	background-color: #555555;
+	color: #FFFFFF;
 	width: 100%;
+	text-align: center;
 }
 
 .preview div {
-	width: 400px;  /* Or whatever */
-  	height: 100px; /* Or whatever */
-  	margin: 30px auto;  /* Magic! */
+	width: 400px;
+  	margin: 20px auto;  /* Magic! */
   	background-color: #000000;
+  	border-radius: 20px;
+  	padding: 10px;
+}
+
+.preview h1 {
+	font-family: 'Aldrich', sans-serif;
+}
+
+.preview * {
+	margin: 5px 0px;
 }
