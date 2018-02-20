@@ -5,7 +5,6 @@
 	box-sizing: border-box;/*Make everything a border box with no margin or padding*/
 	padding: 0;
 	margin: 0;
-
 }
 
 html, body , #PageWrap{
@@ -19,6 +18,7 @@ nav {
 	background-color: #000000; /*Make navbar black*/
 	padding: 20px;/*allow space for content*/
 	width: 100%;/*set width to entire screen*/
+	height: 74px;
 	position: fixed; /*keeps navbar at the top while scrolling*/
 	z-index: 1; /*layers navbar over any other content*/
 }
@@ -76,13 +76,16 @@ nav ul li a {
  }
 
 /*Styles for the rest of navbar links*/
+
+
 #navmenu li a{
 	padding: 20px 10px;/*yellow links that fill entire height of navbar*/
 	color: #F4F122;
 }
 
-#navmenu li a:hover {
-	background-color: #555555; /*turn grey  when user hovers over nav link*/
+#navmenu li a:hover, .current { /*change color and background-color when user hovers over link*/
+	background-color: #F4F122;
+	color: #000000 !important;
 }
 
 .menuButton {
@@ -114,7 +117,7 @@ header { /*center and style text in the header*/
 	flex-wrap: wrap; /*allow divs to wrap as needed*/
 	justify-content: space-around; /*justify and align divs so that they are evenly spaced*/
 	align-content: space-around;
-	background-color: #555555; /*grey background*/
+	background-color: #333333; /*grey background*/
 	width: 100%; /*width of entire screen*/
 	text-align: center; /*center text*/
 	padding: 20px 0px; /*space above and below preview options*/
@@ -143,6 +146,12 @@ header { /*center and style text in the header*/
 	font-family: 'Aldrich', sans-serif; 
 }
 
+.preview > p {
+	width: 100%;
+	margin: 0px 10%;
+	color: #FFFFFF;	
+}
+
 .preview * {
 	margin: 5px 0px; /*space elements in the preview boxes*/
 }
@@ -163,15 +172,52 @@ header { /*center and style text in the header*/
 footer {
 	background-color: #000000;
 	padding: 30px;
-	display: flex;
 }
 
-footer p {
-	display: inline;
-	margin: 20px;
-	font-size: 2em;
-}
+/* media query, add navbar for mobile*/
+@media only screen and (max-width: 900px){
+	
+	#navmenu {
+		display: none;
+		flex-direction: column;
+		position: relative;
+		top: 50px;
+		left: 80px;
+	}
 
-footer i {
+	#navmenu li a {
+		background-color: #000000;
+		display: inline-block;
+		width: 200px;
+		text-align: center;
+
+	}
+
+
+	.menuButton {
+		display: inline-block;
+		border: 2px solid #F4F122;
+		width: 50px;
+		height: 40px;
+		border-radius: 10px;
+		position: relative;
+		bottom: 4px;
+	}
+
+	.menuButton p {
+		border-bottom: 2px solid #F4F122;
+		margin: 5px;
+		position: relative;
+		top: 5px;
+	}
+
+	.menuButton:hover {
+		border: 2px solid #333333;
+		background-color: #F4F122;
+	}
+
+	.menuButton:hover p {
+		border-bottom: 2px solid #333333;
+	}
 
 }
